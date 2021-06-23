@@ -1,0 +1,298 @@
+/* global element styling  */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  background-color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0em;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  padding-top: 1em;
+  background-color: #eee;
+  text-align: center;
+}
+
+main {
+  margin-top: 10em;
+  padding: 0 0.5em;
+}
+
+img {
+  max-width: 85%;
+  height: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #ddd;
+}
+
+/* global classes styling */
+.nav-list__item + .nav-list__item {
+  padding-top: 0.3em;
+}
+
+.hero-section {
+  text-align: center;
+}
+
+.email-placeholder {
+  padding: 0.3125em;
+  max-width: 275px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  margin: 1em auto;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  max-width: 150px;
+  width: 50%;
+  height: 30px;
+  background-color: #f1c40f;
+  border: 0em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ffa500;
+  transition: background-color 1s;
+}
+
+.product-features {
+  text-align: center;
+}
+
+.icon {
+  visibility: hidden;
+}
+
+.product-features {
+  margin-bottom: 5em;
+}
+
+.product-video {
+  margin-bottom: 3.5em;
+}
+
+.page-col,
+.row2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-subsection {
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 0.625em;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.pricing-subsection__text {
+  background-color: #ddd;
+  color: black;
+  padding: 1px 0;
+  width: 100%;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.price {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.pricing-list__item {
+  padding: 0.42em;
+}
+
+.pricing-subsection > button {
+  border: 0;
+  width: 90px;
+  margin: 15px 0px;
+  height: 40px;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.3em;
+  margin-top: 2em;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-list__item {
+  margin-right: 1em;
+}
+
+.footer-list__item + .footer-list__item {
+  margin-right: 1em;
+}
+
+.footer-span {
+  padding-bottom: 1.2em;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+@media (min-width: 688px) {
+  img {
+    width: 300px;
+  }
+
+  header {
+    text-align: unset;
+    width: 100%;
+  }
+
+  li + li {
+    padding-left: 1.5em;
+  }
+
+  iframe {
+    max-width: 560px;
+    width: 100%;
+  }
+
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container2 {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    margin-top: 0.75em;
+  }
+
+  .nav-list {
+    justify-self: flex-end;
+    display: flex;
+  }
+
+  .nav-list__item + .nav-list__item {
+    padding-top: 0em;
+  }
+
+  .works {
+    width: 8em;
+  }
+
+  .lip {
+    padding-right: 0.9375em;
+  }
+
+  .nav-link {
+    color: #000;
+  }
+
+  .hero-section {
+    margin-top: 4.3em;
+  }
+
+  .product-features {
+    text-align: unset;
+    margin-top: 4.5em;
+  }
+
+  .icon {
+    visibility: unset;
+    color: #ff8c00;
+    align-self: center;
+  }
+
+  .product-description {
+    width: 84%;
+  }
+
+  .description-header {
+    margin-bottom: -15px;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    width: 100%;
+  }
+
+  .p {
+    padding-right: 2.5em;
+  }
+
+  .works {
+    width: 10em;
+  }
+
+  .row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .product-description {
+    width: 80.5%;
+  }
+
+  .footer {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .footer-list > li {
+    margin-right: 1em;
+  }
+}
